@@ -1,6 +1,7 @@
 echo build-libffi.bat: generating libffi-x86
 
 SET ROOT_DIR=%~dp0
+IF "%ROOT_DIR:~-1%"=="\" SET "ROOT_DIR=%ROOT_DIR:~0,-1%"
 set LIBFFI_ROOT=%ROOT_DIR%\third-party\libffi
 set LIBFFI_BUILD=%LIBFFI_ROOT%\build
 
