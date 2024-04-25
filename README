@@ -3,7 +3,7 @@
 
 ## 1. Build
 
-1. Install Visual Studio 2022
+1. Install Visual Studio 2022(包含c++, 针对v143生成工具的c++/CLI支持(14.39-17.9)，对v143生成工具(最新)的c++/CLI支持，适用于最新v43生成工具的c++MFC(x86和x64))
 
 2. Install Python3 latest version
 
@@ -27,6 +27,15 @@ $ set QTDIR=C:\Qt\5.12.12\msvc2017_64
 $ set PATH=%PATH%;C:\Qt\5.12.12\msvc2017_64\bin
 $ cmd.exe /c build-libffi.bat
 $ cmd.exe /c build-ultimate-x64.bat
+
+//可能遇到的问题 
+//遇到环境变量有问题就补系统变量(PATH)，添加完环境变量后重启 x64 Native Tools Command Prompt for VS 2022
+//QT(C:\Qt\5.12.12\msvc2017_64\bin)
+//MSBuild(E:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64)
+//cl.exe(E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\Hostx64\x64)
+//rc.exe(C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64)
+//项目：VMProtect属性页-配置：Ultimate，平台：所有平台
+//所有c++项目属性页-c++-常规-将警告视为错误-否
 ```
 
 To build x86 version, in `x86 Native Tools Command Prompt for VS 2022`:
