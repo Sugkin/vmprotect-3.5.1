@@ -1664,6 +1664,9 @@
       <Inputs>
       </Inputs>
     </CustomBuildStep>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked|Win32'">
     <Link>
@@ -1700,6 +1703,9 @@
       <Inputs>
       </Inputs>
     </CustomBuildStep>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">
     <Link>
